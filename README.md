@@ -1,6 +1,6 @@
 # STaR-Bets: Sequential Testing and Randomized Betting
 
-A code for STaR-Bets paper. The `star()` function takes an i.i.d. sample supported on $[0,1]$ and returns a lower bound on the mean at confidence level $1-\alpha$.
+A code for [STaR-Bets paper](https://arxiv.org/abs/2505.22422) . The `star(data, alpha)` function takes an i.i.d. sample supported on $[0,1]$ and returns a lower bound on the mean at confidence level $1-\alpha$.
 
 ## Usage
 
