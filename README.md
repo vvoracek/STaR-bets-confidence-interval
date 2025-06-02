@@ -1,4 +1,4 @@
-# STaR-Bets: Sequential Testing and Randomized Betting
+# STaR-Bets: Sequential Target-Recalculating Bets for Tighter Confidence Intervals
 
 A code for [STaR-Bets paper](https://arxiv.org/abs/2505.22422) . The `star(data, alpha)` function takes an i.i.d. sample supported on $[0,1]$ and returns a lower bound on the mean at confidence level $1-\alpha$.
 
