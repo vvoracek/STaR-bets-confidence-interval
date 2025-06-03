@@ -28,3 +28,10 @@ def star(xs, alpha = 0.05, ms = None):
         sg2 += (x-ms)**2
     r = np.random.rand()
     return lb_from_lgW(ms, lgWs, lga + np.log(r))
+
+
+if(__name__ == '__main__'):
+    data = np.random.rand(100)  # Your data here
+    lower_bound = star(data, alpha=0.05)     # 95% confidence lower bound
+    upper_bound = 1-star(1-data, alpha=0.05)    # 95% confidence upper bound
+    print(f'lower_bound = {lower_bound:.4f}\nupper bound = {upper_bound:.4f}\nmean = {data.mean():.4f}')
