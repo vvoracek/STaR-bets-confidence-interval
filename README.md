@@ -9,7 +9,8 @@ from star import star
 import numpy as np
 
 data = np.random.rand(100)  # Your data here
-lower_bound = star(data, alpha=0.05)    # 95% confidence lower bound
+lower_bound = star(data, alpha=0.05)     # 95% confidence lower bound
+upper_bound = star(1-data, alpha=0.05)    # 95% confidence upper bound
 ```
 
 ## Experiments
