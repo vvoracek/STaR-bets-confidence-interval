@@ -19,10 +19,10 @@ def star(xs, alpha = 0.05, ms = None):
 
     for t, x in enumerate(xs):
         t += 0.0001
-        S = np.minimum(sg2/t + (ms + 0.0001)*len(xs)/t/t,  0.001+ ms*(1-ms))
+        S = np.minimum(sg2/t + (ms + 0.0001)*len(xs)/t/t,  0.0001+ ms*(1-ms))
 
         lmbd = np.sqrt(2*(np.maximum(lga-lgWs, 0))/((len(xs) - t) * S))
-        lmbd = np.clip(lmbd, 1/(ms -1-0.001), 1/(ms + 0.001))
+        lmbd = np.clip(lmbd, 1/(ms -1-0.0001), 1/(ms + 0.0001))
 
         lgWs += np.log(1+lmbd*(x-ms))
         sg2 += (x-ms)**2
